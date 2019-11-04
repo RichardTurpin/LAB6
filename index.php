@@ -43,6 +43,7 @@ if($db) {
       $smarty->assign('MENU_1',"post blog");
       $smarty->assign('MENU_2',"Welcome"." ".$_SESSION['name']);
       $smarty->assign('MENU_3',"logout");
+      $smarty->assign('id',$_SESSION['id']);
    }else{ 
     $smarty->assign('posts',$tuple);
     $smarty->assign('href0',"register.php");
