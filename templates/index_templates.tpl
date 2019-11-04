@@ -95,6 +95,7 @@
         <p style="color:#003300">{$post.content}</p>
         <small>Created:{$post.created_at} </small>
         <small>Updated:{$post.updated_at}</small>
+        <button type="button" style="margin-left: 45%" class="btn">Sign in</button>
       </div>
     </div>
   </div>
