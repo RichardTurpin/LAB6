@@ -22,27 +22,34 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#">About</a></li>
+        <li><a href="{$href1}">{$MENU_1}</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Register</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="{$href0}">{$MENU_2}</a></li>
+        <li><a href="{$href2}"><span class="glyphicon glyphicon-log-in"></span> {$MENU_3}</a></li>
       </ul>
     </div>
   </div>
 </nav>
+{if isset($Msg)}
+<div class="container" style="padding-top: 5%">
+    <div class="container-fluid text-center" style="background-color: #ff0000;border-radius:5px">
+            <h2 style="color: white;">{$Msg}</h2>
+    </div>
+</div>
+{/if}
 <div class="container">
   <h2 style="color: #ffffff">Login</h2>
-  <form>
+  <form action="login_action.php" method="POST">
     <div class="form-group">
-      <label for="usr" style="color: #ffffff">Email or Username:</label>
-      <input type="text" class="form-control" id="usr">
+      <label for="usr" style="color: #ffffff">Email:</label>
+      <input type="text" class="form-control" name="email" id="usr">
     </div>
     <div class="form-group">
       <label for="pwd" style="color: #ffffff">Password:</label>
-      <input type="password" class="form-control" id="pwd">
+      <input type="password" class="form-control" name="password" id="pwd">
     </div>
-    <button type="button" style="margin-left: 45%" class="btn">Sign in</button>
+    <button type="submit" style="margin-left: 45%" class="btn">Sign in</button>
   </form>
 </div>
 
