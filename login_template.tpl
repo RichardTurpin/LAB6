@@ -49,7 +49,7 @@
       <label for="pwd" style="color: #ffffff">Password:</label>
       <input type="password" class="form-control" name="password" id="pwd">
     </div>
-    <button type="button" style="margin-left: 45%" class="btn">Sign in</button>
+    <button type="submit" style="margin-left: 45%" class="btn">Sign in</button>
   </form>
 </div>
 
