@@ -37,6 +37,8 @@ if($db) {
    } // end for
    $smarty->assign('posts',$tuple);
    $smarty->assign('href0',"register.php");
+   $smarty->assign('href2',"login.php");
+
 
   // Mostra a tabela
   $smarty->display('templates/index_templates.tpl');

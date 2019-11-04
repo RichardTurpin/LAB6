@@ -1,7 +1,6 @@
 <?php
 include("db.php");
 
-
 $db = dbconnect($hostname,$db_name,$db_user,$db_passwd);
 session_start();
 
