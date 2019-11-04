@@ -7,6 +7,7 @@ $smarty->template_dir = 'templates';
 $smarty->compile_dir = 'templates_c';
 
 $db = dbconnect($hostname,$db_name,$db_user,$db_passwd);
+session_start();
 
 if($db)
 {
@@ -26,7 +27,8 @@ if($db)
 
 
 	} else {
-		header("Location:login.php?")
+		$_SESSION['erro']=-1;
+		header("Location:login.php")
 	}
 
 }
