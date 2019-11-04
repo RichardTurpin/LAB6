@@ -22,7 +22,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#">{$MENU_1}</a></li>
+        <li><a href="{$href1}">{$MENU_1}</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="{$href0}">{$MENU_2}</a></li>
