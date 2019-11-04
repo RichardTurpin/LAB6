@@ -1,10 +1,6 @@
 <?php
 include("db.php");
-require('libs/Smarty.class.php');
-$smarty = new Smarty();
 
-$smarty->template_dir = 'templates';
-$smarty->compile_dir = 'templates_c';
 
 $db = dbconnect($hostname,$db_name,$db_user,$db_passwd);
 session_start();
