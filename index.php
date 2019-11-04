@@ -35,12 +35,14 @@ if($db) {
   
 
    } // end for
+
    $smarty->assign('posts',$tuple);
    $smarty->assign('href0',"register.php");
    $smarty->assign('href2',"login.php");
    $smarty->assign('MENU_2',"Register");
    $smarty->assign('MENU_3',"Log In");
    $smarty->assign('href0',"register.php");
+   if(isset($_SESSION['']))
 
 
   // Mostra a tabela
