@@ -23,7 +23,7 @@ if($db)
 
 	} else {
 		$_SESSION['erro']=-1;
-		header("Location:login.php")
+		header("Location:login.php");
 	}
 
 }
